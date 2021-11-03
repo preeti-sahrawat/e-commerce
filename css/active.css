@@ -1,0 +1,149 @@
+body {
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#regForm {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 96%;
+    height: 550px;
+    padding: 10px 30px 6px 26px;
+    margin: 50px 0px 0px 40px;
+    min-width: 300px;
+}
+.loginheader{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 65px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
+    background: rgb(255, 255, 255);
+}
+.loginheader h1{
+    color: blue;
+    font-weight: bold;
+}
+@media(max-width: 991px){
+    .maintext {
+        display: none;
+    }
+}
+
+@media(max-width: 991px){
+    #regForm {
+        margin: 50px 0px 0px 0px;
+    }
+}
+#logForm {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 96%;
+    height: 430px;
+    padding: 40px 30px 6px 26px;
+    margin: 140px 0px 0px 40px;
+    min-width: 300px;
+}
+#captcha{
+    font-size: 20px;
+    font-family: cursive;
+    color: yellow;
+    background-color: lightslategray;
+    font-weight: bold;
+    margin: 0px 17px 0px 0px;
+}
+#forget {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 96%;
+    height: 340px;
+    padding: 40px 30px 6px 26px;
+    margin: 140px 0px 0px 40px;
+    min-width: 300px;
+}
+@media(max-width: 991px){
+    #logForm{
+        margin-left: 0px;
+    }
+}
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Hide all steps by default: */
+
+@media(max-width: 900px) {
+    #reForm {
+        display: none;
+    }
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+.maintext {
+    line-height: 56px;
+    color: white;
+    margin-top: 178px;
+    text-transform: uppercase;
+    /* opacity: 4.1; */
+    font-size: 30px;
+}
+
+#nextBtn:hover {
+    background: #d5e4f7;
+}
+
+.loginbtn {
+    border: 1px solid rgba(0, 105, 255, .2);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 10%;
+    display: inline-block;
+    margin-top: 0;
+    width: 47.5%;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    background: #d5e4f7;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
